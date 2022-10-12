@@ -1,0 +1,340 @@
+Сообщить об ошибке.
+Работа со стилями текста и ячеек, модуль openpyxl в Python.
+Модуль openpyxl обеспечивает довольно гибкое управление стилями, относительно простую работу с ними. Стили в электронных таблицах XLSX используются для изменения внешнего вида данных при отображении на экране. Они также используются для определения форматирования чисел.
+
+Содержание:
+Аспекты применения стилей модулем openpyxl.
+Cтили ячеек электронной таблицы.
+Создания нового стиля на основе другого.
+Цвета для шрифтов, фона, границ.
+Применение стилей.
+Горизонтальное и вертикальное выравнивание текста.
+Оформление границ ячеек.
+Заливка ячеек цветом и цвет текста.
+Именованные стили NamedStyle.
+Создание именованного стиля.
+Встроенные в Excel стили.
+
+Аспекты применения стилей модулем openpyxl.
+Стили могут быть применены к следующим аспектам:
+
+font: устанавливает размер шрифта, цвет, стиль подчеркивания и т. д.
+fill: устанавливает шаблон или градиент цвета заливки ячейки.
+border: устанавливает стиль границы ячейки.
+alignment: устанавливает выравнивание ячейки.
+Ниже приведены значения по умолчанию установленные модулем openpyxl:
+
+from openpyxl.styles import (
+                        PatternFill, Border, Side,
+                        Alignment, Font, GradientFill
+                        )
+
+# СТИЛЬ ШРИФТА
+font = Font(
+        name='Calibri',
+        size=11,
+        bold=False,
+        italic=False,
+        vertAlign=None,
+        underline='none',
+        strike=False,
+        color='FF000000'
+            )
+
+# ЗАЛИВКА ЯЧЕЕК
+fill = PatternFill(fill_type=None, fgColor='FFFFFFFF')
+
+# ГРАНИЦЫ ЯЧЕЕК
+border = Border(
+            left=Side(border_style=None, color='FF000000'),
+            right=Side(border_style=None, color='FF000000'),
+            top=Side(border_style=None, color='FF000000'),
+            bottom=Side(border_style=None, color='FF000000'),
+            diagonal=Side(border_style=None, color='FF000000'),
+            diagonal_direction=0,
+            outline=Side(border_style=None, color='FF000000'),
+            vertical=Side(border_style=None, color='FF000000'),
+            horizontal=Side(border_style=None, color='FF000000')
+               )
+
+# ВЫРАВНИВАНИЕ В ЯЧЕЙКАХ
+alignment=Alignment(
+                horizontal='general',
+                vertical='bottom',
+                text_rotation=0,
+                wrap_text=False,
+                shrink_to_fit=False,
+                indent=0
+                   )
+
+Cтили ячеек электронной таблицы.
+Существует два типа стилей: стили ячеек и именованные стили, также известные как шаблоны стилей.
+
+Стили ячеек являются общими для объектов, и после того, как они были назначены, их нельзя изменить. Это предотвращает нежелательные побочные эффекты, такие как изменение стиля для большого количества ячеек при изменении только одной.
+
+Например:
+
+>>> from openpyxl.styles import colors
+>>> from openpyxl.styles import Font, Color
+>>> from openpyxl import Workbook
+>>> wb = Workbook()
+>>> ws = wb.active
+>>> ws['A1'].value = 'Ячейка `A1`'
+>>> ws['D4'].value = 'Ячейка `D4`'
+# задаем стиль шрифта текста - цвет  ячейке
+>>> ft = Font(color="FF0000")
+# применяем стиль к ячейкам
+>>> ws['A1'].font = ft
+>>> ws['D4'].font = ft
+# это изменение не сработает
+>>> ws['D4'].font.italic = True
+# Если необходимо изменить шрифт,
+# то его необходимо переназначить новым стилем
+ws['A1'].font = Font(color="FF0000", italic=True)
+>>> wb.save('test.xlsx')
+
+Создания нового стиля на основе другого.
+Модуль openpyxl поддерживает копирование стилей.
+
+Пример создания нового стиля на основе другого:
+
+>>> from openpyxl.styles import Font
+>>> from copy import copy
+# задаем стиль
+>>> ft1 = Font(name='Arial', size=14)
+# копируем стиль
+>>> ft2 = copy(ft1)
+# а вот теперь на основе скопированного стиля
+# можно создать новый, изменив атрибуты
+>>> ft2.name = "Tahoma"
+# имя шрифта первого стиля
+>>> ft1.name
+# 'Arial'
+
+# имя шрифта нового стиля
+>>> ft2.name
+# 'Tahoma'
+
+# размер остался как у первого
+>>> ft2.size # copied from the
+# 14.0
+
+Цвета для шрифтов, фона, границ.
+Цвета для шрифтов, фона, границ и т.д. Можно задать тремя способами: индексированный, aRGB или тема. Индексированные цвета являются устаревшей реализацией, и сами цвета зависят от индекса, предоставленного в рабочей книге или в приложении по умолчанию. Цвета темы полезны для дополнительных оттенков цветов, но также зависят от темы, присутствующей в рабочей книге. Поэтому рекомендуется использовать цвета aRGB.
+
+Цвета aRGB.
+Цвета RGB устанавливаются с использованием шестнадцатеричных значений красного, зеленого и синего.
+
+>>> from openpyxl.styles import Font
+>>> font = Font(color="FF0000")
+Альфа-значение теоретически относится к прозрачности цвета, но это не относится к стилям ячеек. Значение по умолчанию 00 будет добавлено к любому простому значению RGB:
+
+>>> from openpyxl.styles import Font
+>>> font = Font(color="00FF00")
+>>> font.color.rgb
+# '0000FF00'
+
+Применение стилей.
+Стили применяются непосредственно к ячейкам.
+
+>>> from openpyxl import Workbook
+>>> from openpyxl.styles import Font, PatternFill
+>>> wb = Workbook()
+>>> ws = wb.active
+>>> c = ws['A1']
+>>> c.value = 'Ячейка `A1`'
+>>> c.font = Font(size=12)
+# можно напрямую
+>>> ws['A2'].value = 'Ячейка `A2`'
+>>> ws['A2'].font = Font(size=12, bold=True)
+>>> wb.save('test.xlsx')
+Стили также могут применяться к столбцам и строкам, но обратите внимание, что это относится только к ячейкам, созданным (в Excel) после закрытия файла. Если необходимо применить стили ко всем строкам и столбцам, то нужно применить стиль к каждой ячейке самостоятельно.
+
+Это ограничение формата файла:
+
+>>> col = ws.column_dimensions['A']
+>>> col.font = Font(bold=True)
+>>> row = ws.row_dimensions[1]
+>>> row.font = Font(underline="single")
+
+Горизонтальное и вертикальное выравнивание текста.
+Горизонтальное и вертикальное выравнивание в ячейках выставляется атрибутом ячейки .alignment и классом Alignment().
+
+Пример горизонтального выравнивания текста:
+
+>>> from openpyxl import Workbook
+>>> from openpyxl.styles import Alignment
+>>> wb = Workbook()
+>>> ws = wb.active
+>>> ws['A1'].value = 1500
+>>> ws['A2'].value = 1500
+>>> ws['A3'].value = 1500
+# выравниваем текст в ячейках стилями
+>>> ws['A1'].alignment = Alignment(horizontal='left')
+>>> ws['A2'].alignment = Alignment(horizontal='center')
+>>> ws['A3'].alignment = Alignment(horizontal='right')
+# сохраняем и смотрим что получилось
+>>> wb.save('test.xlsx')
+Вертикальное выравнивание в основном применяется когда изменена высота строки
+или были объединены несколько ячеек.
+
+Пример вертикального выравнивания данных в ячейке:
+
+>>> from openpyxl import Workbook
+>>> from openpyxl.styles import Alignment
+>>> wb = Workbook()
+>>> ws = wb.active
+# объединим ячейки в диапазоне `B2:E2`
+>>> ws.merge_cells('B2:E2')
+# в данном случае крайняя верхняя-левая ячейка это `B2`
+>>> megre_cell = ws['B2']
+# запишем в нее текст
+>>> megre_cell.value = 'Объединенные ячейки `B2 : E2`'
+# установить высоту строки
+>>> ws.row_dimensions[2].height = 30
+# установить ширину столбца
+>>> ws.column_dimensions['B'].width = 40
+# выравнивание текста
+>>> megre_cell.alignment = Alignment(horizontal="center", vertical="center")
+# сохраняем и смотрим что получилось
+>>> wb.save("test.xlsx")
+
+Оформление границ ячеек.
+Цвет и стиль границ/бордюров ячеек выставляется атрибутом ячейки .border и классом Border() совместно с классом Side().
+
+При этом аргумент стиля границ ячеек border_style может принимать ОДИН из следующих значений:
+‘dashDotDot’, ‘medium’, ‘dotted’, ‘slantDashDot’, ‘thin’,
+‘hair’, ‘mediumDashDotDot’, ‘dashDot’, ‘double’, ‘mediumDashed’,
+‘dashed’, ‘mediumDashDot’ и ‘thick’.
+
+Пример стилизации границ одной ячейки:
+
+>>> from openpyxl import Workbook
+>>> from openpyxl.styles import Border, Side
+>>> wb = Workbook()
+>>> ws = wb.active
+>>> cell = ws['B2']
+# установить высоту строки
+>>> ws.row_dimensions[2].height = 30
+# установить ширину столбца
+>>> ws.column_dimensions['B'].width = 40
+# определим стили сторон
+>>> thins = Side(border_style="medium", color="0000ff")
+>>> double = Side(border_style="dashDot", color="ff0000")
+# рисуем границы
+>>> cell.border = Border(top=double, bottom=double, left=thins, right=thins)
+>>> wb.save("styled_border.xlsx")
+Пример стилизации границ нескольких ячеек:
+
+from openpyxl import Workbook
+from openpyxl.styles import Border, Side
+
+wb = Workbook()
+ws = wb.active
+
+# определим стили сторон
+thins = Side(border_style="thin", color="0000ff")
+double = Side(border_style="double", color="ff0000")
+
+# начинаем заполнение области ячеек 10x10 данными
+# при этом будем стилизировать границы области
+for r, row in enumerate(range(5, 15), start=1):
+    for c, col in enumerate(range(5, 15), start=1):
+        # это значение, которое будем записывать в ячейку
+        val_cell = r*c
+        # левая верхняя ячейка
+        if r == 1 and c == 1:
+            ws.cell(row=row, column=col, value=val_cell).border = Border(top=double, left=thins)
+        # правая верхняя ячейка
+        elif r == 1 and c == 10:
+            ws.cell(row=row, column=col, value=val_cell).border = Border(top=double, right=thins)
+        # верхние ячейки
+        if r == 1 and c != 1 and c != 10:
+            ws.cell(row=row, column=col, value=val_cell).border = Border(top=double)
+        # левая нижняя ячейка
+        elif r == 10 and c == 1:
+            ws.cell(row=row, column=col, value=val_cell).border = Border(bottom=double, left=thins)
+        # правая нижняя ячейка
+        elif r == 10 and c == 10:
+            ws.cell(row=row, column=col, value=val_cell).border = Border(bottom=double, right=thins)
+        # нижние ячейки
+        elif r == 10 and c != 1 and c != 10:
+            ws.cell(row=row, column=col, value=val_cell).border = Border(bottom=double)
+        # левые ячейки
+        elif c == 1 and r != 1 and r != 10:
+            ws.cell(row=row, column=col, value=val_cell).border = Border(left=thins)
+        # правые ячейки
+        elif c == 10 and r != 1 and r != 10:
+            ws.cell(row=row, column=col, value=val_cell).border = Border(right=thins)
+        else:
+            # здесь ячейки просто заполняются данными
+            ws.cell(row=row, column=col, value=val_cell)
+
+# сохраняем и смотрим что получилось
+wb.save("styled_border.xlsx")
+
+Заливка ячеек цветом и цвет текста.
+Цвет заливки ячеек выставляется атрибутом ячейки .fill и классом PatternFill().
+
+Обязательный аргумент fill_type (по умолчанию равен None) класса PatternFill() может принимать значения:
+
+если fill_type='solid', то нужно обязательно указывать аргумент цвета заливки fgColor.
+следующие значения аргумента fill_type применяются самостоятельно (без аргумента fgColor) и представляют собой предустановленные цвета заливки : ‘darkHorizontal’, ‘lightDown’, ‘lightGray’, ‘darkDown’, ‘darkGrid’, ‘darkUp’, ‘darkGray’, ‘darkVertical’, ‘darkTrellis’, ‘mediumGray’, ‘lightVertical’, ‘lightTrellis’, ‘lightGrid’, ‘lightHorizontal’, ‘gray0625’, ‘lightUp’, ‘gray125’.
+Внимание: если аргумент fill_type не указан, то fgColor не будет иметь никакого эффекта!
+
+Пример заливки одной ячейки:
+
+>>> from openpyxl import Workbook
+>>> from openpyxl.styles import PatternFill, Font, Alignment
+>>> wb = Workbook()
+>>> ws = wb.active
+# объединим ячейки в диапазоне `B2:E2`
+>>> ws.merge_cells('B2:E2')
+>>> megre_cell = ws['B2']
+# запишем в нее текст
+>>> megre_cell.value = 'Объединенные ячейки `B2 : E2`'
+# установить высоту строки
+>>> ws.row_dimensions[2].height = 30
+# установить ширину столбца
+>>> ws.column_dimensions['B'].width = 40
+# заливка ячейки цветом
+>>> megre_cell.fill = PatternFill('solid', fgColor="DDDDDD")
+# шрифт и цвет текста ячейки
+>>> megre_cell.font = Font(bold=True, color='FF0000', name='Arial', size=14)
+# ну и для красоты выровним текст
+>>> megre_cell.alignment = Alignment(horizontal='center', vertical='center')
+# сохраняем и смотрим что получилось
+>>> wb.save("cell_color.xlsx")
+
+Именованные стили NamedStyle.
+В отличие от простых стилей ячеек, именованные стили изменяемы и используется для объединения в себе нескольких стилей, таких как шрифты, границы, выравнивание и т. д. Они имеют смысл, когда необходимо применить форматирование к множеству разных ячеек одновременно. Об именованных стилях можно думать как о классах CSS при оформлении HTML-разметки. Именованные стили регистрируются в рабочей книге.
+
+Примечание. После назначения ячейке именованного стиля, дальнейшие/дополнительные изменения этого стиля не повлияют на стиль ячейки.
+
+Как только именованный стиль зарегистрирован в рабочей книге, на него можно ссылаться просто по имени.
+
+
+Создание именованного стиля.
+>>> from openpyxl.styles import NamedStyle, Font, Border, Side
+# создание переменной именованного стиля
+>>> name_style = NamedStyle(name="highlight")
+# применение стилей к созданной переменной
+>>> name_style.font = Font(bold=True, size=20)
+>>> bd = Side(style='thick', color="000000")
+>>> name_style.border = Border(left=bd, top=bd, right=bd, bottom=bd)
+После создания именованного стиля его нужно зарегистрировать в рабочей книге:
+
+>>> wb.add_named_style(name_style)
+Именованные стили также будут автоматически зарегистрированы при первом назначении их ячейке:
+
+>>> ws['A1'].style = name_style
+После регистрации стиля в рабочей книге, применять его можно только по имени:
+
+>>> ws['D5'].style = 'highlight'
+
+Встроенные стили в Excel.
+Спецификация включает в себя некоторые встроенные стили, которые также могут быть использованы. К сожалению, имена для этих стилей хранятся в их локализованных формах. OpenPyxl узнает только английские имена и только так, как они записаны в официальной документации.
+
+Использование встроенных в Excel стилей здесь не рассматривается, так как при их применении могу возникать существенные искажения.
+
+DOCS-Python.ru™, 2022 г. (Внимание! При копировании материала ссылка на источник обязательна)

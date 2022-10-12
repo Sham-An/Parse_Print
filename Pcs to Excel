@@ -1,0 +1,163 @@
+Write Excel with Python Pandas
+
+Write Excel with Python Pandas. You can write any data
+(lists, strings, numbers etc) to Excel, by first converting it into a Pandas
+DataFrame and then writing the DataFrame to Excel.
+
+To export a Pandas DataFrame as an Excel file (extension: .xlsx, .xls), use the to_excel() method.
+
+Related course: Data Analysis with Python Pandas
+installxlwt, openpyxl
+
+to_excel() uses a library called xlwt and openpyxl internally.
+
+    xlwt is used to write .xls files (formats up to Excel2003)
+    openpyxl is used to write .xlsx (Excel2007 or later formats).
+
+Both can be installed with pip. (pip3 depending on the environment)
+
+$ pip install xlwt
+$ pip install openpyxl
+
+Write Excel
+Write DataFrame to Excel file
+
+Importing openpyxl is required if you want to append it to an existing Excel file
+described at the end.
+A dataframe is defined below:
+
+import pandas as pd
+import openpyxl
+
+df = pd.DataFrame([[11, 21, 31], [12, 22, 32], [31, 32, 33]],
+                  index=['one', 'two', 'three'], columns=['a', 'b', 'c'])
+
+print(df)
+#         a   b   c
+# one    11  21  31
+# two    12  22  32
+# three  31  32  33
+
+You can specify a path as the first argument of the to_excel() method.
+
+    Note: that the data in the original file is deleted when overwriting.
+
+The argument new_sheet_name is the name of the sheet. If omitted, it will be named Sheet1.
+
+df.to_excel('pandas_to_excel.xlsx', sheet_name='new_sheet_name')
+
+Python Write Excel
+
+Related course: Data Analysis with Python Pandas
+
+If you do not need to write index (row name), columns (column name), the argument index, columns is False.
+
+df.to_excel('pandas_to_excel_no_index_header.xlsx', index=False, header=False)
+
+Write multiple DataFrames to Excel files
+
+The ExcelWriter object allows you to use multiple pandas. DataFrame objects can be exported to separate sheets.
+
+As an example, pandas. Prepare another DataFrame object.
+
+df2 = df[['a', 'c']]
+print(df2)
+#         a   c
+# one    11  31
+# two    12  32
+# three  31  33
+
+Then use the ExcelWriter() function like this:
+
+with pd.ExcelWriter('pandas_to_excel.xlsx') as writer:
+    df.to_excel(writer, sheet_name='sheet1')
+    df2.to_excel(writer, sheet_name='sheet2')
+
+You don’t need to call writer.save(), writer.close() within the blocks.
+Append to an existing Excel file
+
+You can append a DataFrame to an existing Excel file. The code below opens an existing file, then adds two sheets with the data of the dataframes.
+
+    Note: Because it is processed using openpyxl, only .xlsx files are included.
+
+path = 'pandas_to_excel.xlsx'
+
+with pd.ExcelWriter(path) as writer:
+    writer.book = openpyxl.load_workbook(path)
+    df.to_excel(writer, sheet_name='new_sheet1')
+    df2.to_excel(writer, sheet_name='new_sheet2')
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> # http://openpyxl.readthedocs.io/en/2.5/tutorial.html#create-a-workbook
+>>> from openpyxl import Workbook
+>>> wb = Workbook()
+>>> print(wb.sheetnames)
+['Sheet']
+>>>
+>>> print(wb.active)
+<Worksheet "Sheet">
+>>> ws = wb.active
+>>> ws.title = "alpha"
+>>>
+>>> ws = wb.create_sheet('bravo')
+>>> print(wb.sheetnames)
+['alpha', 'bravo']
+>>> print(wb.active)
+<Worksheet "alpha">
+>>>
+>>> ws = wb.create_sheet('charlie',0)  # insert at index 0
+>>> print(wb.sheetnames)
+['charlie', 'alpha', 'bravo']
+>>> print(wb.active)
+<Worksheet "charlie">
+>>>
+>>>
+>>> wb.active = 1
+>>> print(wb.active)
+<Worksheet "alpha">
+>>>
+>>> wb.active = 2
+>>> print(wb.active)
+<Worksheet "bravo">
+>>>
+>>> wb.active = 0
+>>> print(wb.active)
+<Worksheet "charlie">
+>>>
+>>> wb.active = 3
+>>> print(wb.active)
+None
+>>>
+>>> ws = wb.create_sheet(index=0)  # insert at index
+>>> print(wb.active)
+<Worksheet "bravo">
+>>> print(wb.sheetnames)
+['Sheet', 'charlie', 'alpha', 'bravo']
+>>>
+>>>
+>>> ws_active = wb.get_sheet_by_name('charlie')
+<stdin>:1: DeprecationWarning: Call to deprecated function get_sheet_by_name (Use wb[sheetname]).
+>>> ws_active = wb['charlie']
+>>> print(wb.active)
+<Worksheet "bravo">
+>>> ws4 = wb["charlie"] # from https://stackoverflow.com/a/36814135/4539999
+>>> print(wb.active)
+<Worksheet "bravo">
+>>>
+>>> # Set Active Sheet
+>>> for i, s in enumerate(wb.sheetnames):
+...     if s == 'charlie':
+...         break
+...
+>>> wb.active = i
+>>>
+>>> # Confirm Active Sheet
+>>> print(wb.active)
+<Worksheet "charlie">
+>>>
+>>> # Open workbook to verify
+>>> wb.save("Demo.xlsx")
