@@ -327,6 +327,7 @@ def CreateParentDB():
             )     
     """)
 
+
     cursor.execute('''
               INSERT INTO PCSparent (
               id, PAR_id, PAR_kod, PAR_NAME_FULL, PAR_NAME_short, PAR_kalibr, PAR_trotil, PAR_count, PAR_tara,
