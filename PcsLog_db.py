@@ -9,12 +9,14 @@ import sqlite3
 from contextlib import closing
 import json  # json.dumps(['please','help','me']) json.loads(s)
 
-datamain = 'PcsLog2.db'
+datamain = 'PcsLog.db'
+datamain2 = 'PcsLog2.db'
 conn_PCS_main = sqlite3.connect(datamain)
 
 database = 'Pcsparse.db'
 conn_PCS_db = sqlite3.connect(database)
-
+azitr = 'Азитрмицин'
+tim1 = '2020-10-19 11:29:06.961'
 
 def open_cur():
     # with closing(sqlite3.connect(database)) as connection:
@@ -54,7 +56,7 @@ def check_database(PCS_in):
             cursor.execute("""
                      INSERT INTO PCSparse
                      VALUES (NULL, :PCS_id, :kod_start, :kod_stop, :start, :start, :stop, :Full_path,
-                     :file_name, :kalibr, :kog_group, :file_dir, :Full_path, :file_name, :GTIN_kod, :GTIN_name,  
+                     :parent_group_file, :kalibr, :kog_group, :file_dir, :Full_path, :file_name, :GTIN_kod, :GTIN_name,  
                      :last_kod_id, :last_kod, :status)
                      """, PCS)
             connection.commit()
@@ -108,7 +110,10 @@ def prnpcs():
             Log_Time = row[3]
             cont = str(row[4])
             # blank = 'бланк'
+
             insert_db = ''
+            if str(Log_Time) < '2020-10-19 11:29:06.962':
+                continue
 
             if key1 in cont:
 
@@ -131,14 +136,19 @@ def prnpcs():
                 PCS["last_kod_id"] = '--'
                 PCS["last_kod"] = '--'
                 PCS["status"] = '--'
+            #if key1 in cont:
                 if blank in cont:
                     continue
                     cont = cont.replace('бланк', "бланк бланк бланк")
                     # print('############################################################', cont)
 
+                if azitr in cont:
+                    cont = cont.replace(azitr, "Азитромицин")
+
                 ID_PCS = row[0]
                 PCS["PCS_id"] = ID_PCS
                 PCS["Log_Time"] = row[3]  # Log_Time
+                print("LOG_TIME LOG_TIME LOG_TIME LOG_TIME LOG_TIME ",row[3])
                 # PCS["cont"] = cont
                 # 'C:\\Users\\Solmark\\Desktop\\СЕРИИ\\Омепразол 30\\бланк1.VDF')
                 cont_txt = cont
@@ -154,24 +164,37 @@ def prnpcs():
 
                 print(f'list_path list_pathlist_pathlist_pathlist_pathlist_path {list_path}')
                 name_dir = list_path[-2]
-                if name_dir == 'CheckNozzle':
-                    continue
+#                if name_dir == 'CheckNozzle':
+#                    continue
+
                 filename = list_path[-1]
-                kod_name = pathlib.Path(filename).stem
-                length_kod = int(len(kod_name) - int('9'))
-                # kod = os.path.basename(kod_name).split(' ')[-1]
-                kod1 = kod_name[length_kod:]
-                group_dict1 = kod_name.replace('-', " ")
-                group_dict = group_dict1.replace('  ', " ")
-                parent_group = os.path.basename(kod_name).split('-')  # [0]
-                parent_group2 = group_dict.split(' ')  # [0]
-                # print(f'parent_group2  === === {parent_group2} NAME {parent_group2[0]} trotil {parent_group2[-1]} kod {parent_group2[-1]}')
+                print(f'@@@@@@@@@@@@@@@@@@@@@@@@@@@@@filename {(len(filename) < 15)}filename filename filename len {len(filename)}')
+                if len(filename) < 15:
+                    insert_db = 'пропуск'
+                    filename = 'пропуск'
+                    name_dir = 'пропуск'
+                    print(f'ПРОПУСК filename filename filename filename len {len(filename)} {filename}')
+                    continue
+                else:
+                    kod_name = pathlib.Path(filename).stem
+                    length_kod = int(len(kod_name) - int('9'))
+                    # kod = os.path.basename(kod_name).split(' ')[-1]
+                    kod1 = kod_name[length_kod:]
+                    group_dict1 = kod_name.replace('-', " ")
+                    group_dict = group_dict1.replace('  ', " ")
+                    parent_group = os.path.basename(kod_name).split('-')  # [0]
+                    parent_group2 = group_dict.split(' ')  # [0]
+                    # print(f'parent_group2  === === {parent_group2} NAME {parent_group2[0]} trotil {parent_group2[-1]} kod {parent_group2[-1]}')
                 if len(parent_group2) != 3:
+                    cont = ''
+                    insert_db = 'пропуск'
+                    #continue
                     print(
                         f'parent_group2  !!! === === {parent_group2} NAME {parent_group2[0]} trotil {parent_group2[-1]} kod {parent_group2[-1]}')
                     name_group = parent_group2[0]
-                    trotil = 'Не определен'
+                    #trotil = 'Не определен'
                     kog_group = parent_group2[-1]
+                    trotil = kog_group
                 else:
                     name_group = parent_group2[0].upper()
                     trotil = parent_group2[-2]
@@ -211,7 +234,10 @@ def prnpcs():
                 # PCS["stop"] = ""
                 # PCS["kod_stop"] = ''
                 # print(' \n Печать работы:   ')
-                insert_db = 'Insert  '
+                if len(filename) < 15:
+                    insert_db = 'пропуск'
+                else:
+                    insert_db = 'Insert  '
 
                 ## "INSERT INTO PCSparse (PCS_time,PCS_context) VALUES (Log_Time, cont)"
                 # cur.execute(
@@ -372,7 +398,7 @@ def CreateParentDB():
 
 
 if __name__ == '__main__':
-    # CreateLogDB()
-    #clearparse()
-    #prnpcs()
-    CreateParentDB()
+    #CreateLogDB()
+    clearparse()
+    prnpcs()
+    #CreateParentDB()
