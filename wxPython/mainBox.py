@@ -18,8 +18,19 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_TOOL, self.onOpenFile, br_file)
 
     def onQuit(self, e):
-        dlg = wx.MessageBox('Вы дейстительно хотите выйти из программы?', 'Вопрос',
-                            wx.YES_NO | wx.NO_DEFAULT, self)
+     #   dlg = wx.MessageBox('Вы дейстительно хотите выйти из программы?', 'Вопрос',
+     #                       wx.YES_NO | wx.NO_DEFAULT, self)
+        dlg = wx.MessageDialog(self, 'Вы дейстительно хотите выйти из программы?', 'Вопрос',
+                            wx.YES_NO | wx.NO_DEFAULT | wx.ICON_QUESTION)
+
+        #dlg.ShowModal()
+        res = dlg.ShowModal()
+
+        if res == wx.ID_YES:
+            print("Нажата кнопка (да)")
+        elif res == wx.ID_NO:
+            print("Нажата кнопка (нет)")
+
 
     def onDir(self,e):
         """ Select Dir"""
