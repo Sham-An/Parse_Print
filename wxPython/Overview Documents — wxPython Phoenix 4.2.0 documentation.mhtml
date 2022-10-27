@@ -1,0 +1,2305 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://docs.wxpython.org/Overviews.html
+Subject: =?utf-8?Q?Overview=20Documents=20=E2=80=94=20wxPython=20Phoenix=204.2.0?=
+ =?utf-8?Q?=20documentation?=
+Date: Wed, 26 Oct 2022 20:13:26 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----"
+
+
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/html
+Content-ID: <frame-FEE0FB0AD7FD70DB285E51AFB2326F2C@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://docs.wxpython.org/Overviews.html
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml"><head><meta htt=
+p-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"><link rel=
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-a7299e89-bf8d-49fe-8cd8-0=
+c300102b7c7@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-365efaeb-9951-42cd-a98b-b220040b50c8@mhtml.blink" /><link rel=
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-c6e85903-b3e3-46d3-adb3-f=
+3cdf16ed88b@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-7c8420f2-3523-4c2d-b114-4882320d42a4@mhtml.blink" /><link rel=
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-77698f7d-0dbd-469e-9d3f-5=
+7801ecd26f9@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=
+=3D"cid:css-aa7ced9b-82b2-4fd4-8dbb-e8d2add3d165@mhtml.blink" /><link rel=
+=3D"stylesheet" type=3D"text/css" href=3D"cid:css-ec24d736-948d-4006-a745-1=
+6e98bb6c319@mhtml.blink" />
+
+<title>Overview Documents =E2=80=94 wxPython Phoenix 4.2.0 documentation</t=
+itle>
+<link href=3D"https://docs.wxpython.org/_static/css/phoenix.css" rel=3D"sty=
+lesheet" type=3D"text/css">
+<link href=3D"https://docs.wxpython.org/_static/pygments.css" rel=3D"styles=
+heet" type=3D"text/css">
+
+
+
+
+
+
+
+
+
+
+
+<link href=3D"https://docs.wxpython.org/_static/phoenix_small.ico" rel=3D"s=
+hortcut icon">
+<link href=3D"https://docs.wxpython.org/genindex.html" rel=3D"index" title=
+=3D"Index">
+<link href=3D"https://docs.wxpython.org/search.html" rel=3D"search" title=
+=3D"Search">
+<link href=3D"https://docs.wxpython.org/hello_world.html" rel=3D"next" titl=
+e=3D"wxPython Introduction and Hello World">
+<link href=3D"https://docs.wxpython.org/DocstringsGuidelines.html" rel=3D"p=
+rev" title=3D"Phoenix Docstrings Guidelines">
+</head><body><div id=3D"MathJax_Message" style=3D"display: none;"></div>
+<div class=3D"related">
+<h3>Navigation</h3>
+<ul class=3D"row1">
+<li><img alt=3D"" src=3D"https://docs.wxpython.org/_static/images/sphinxdoc=
+s/phoenix_small.png"></li>
+<li><a href=3D"https://wxpython.org/" style=3D"color: rgb(238, 152, 22); ho=
+ver: rgb(53, 95, 124);">Home</a> |&nbsp;</li>
+<li><a href=3D"https://docs.wxpython.org/gallery.html" style=3D"color: rgb(=
+238, 152, 22); hover: rgb(53, 95, 124);;">Gallery</a> |&nbsp;</li>
+<li><a href=3D"https://docs.wxpython.org/index.html" style=3D"color: rgb(23=
+8, 152, 22); hover: rgb(53, 95, 124);">API Docs</a> =C2=BB </li>
+<li class=3D"reltitle"> <strong>Overview Documents</strong></li>
+<li class=3D"right" style=3D"margin-right: 10px">
+<a accesskey=3D"I" href=3D"https://docs.wxpython.org/genindex.html" title=
+=3D"General Index">index</a></li>
+<li class=3D"right">
+<a href=3D"https://docs.wxpython.org/py-modindex.html" title=3D"Python Modu=
+le Index">modules</a> |</li>
+<li class=3D"right">
+<a accesskey=3D"N" href=3D"https://docs.wxpython.org/hello_world.html" titl=
+e=3D"wxPython Introduction and Hello World">next</a> |</li>
+<li class=3D"right">
+<a accesskey=3D"P" href=3D"https://docs.wxpython.org/DocstringsGuidelines.h=
+tml" title=3D"Phoenix Docstrings Guidelines">previous</a> |</li>
+</ul>
+</div>
+<div aria-label=3D"main navigation" class=3D"sphinxsidebar" role=3D"navigat=
+ion" style=3D"width: 240px; right: auto; left: 0px;">
+<div class=3D"sphinxsidebarwrapper">
+<p class=3D"logo"><a href=3D"https://docs.wxpython.org/index.html">
+<img alt=3D"Logo" class=3D"logo" src=3D"https://docs.wxpython.org/_static/p=
+hoenix_main.png">
+</a></p>
+<div id=3D"searchbox" role=3D"search" style=3D"">
+<h4>Search</h4>
+<form action=3D"https://docs.wxpython.org/search.html" class=3D"search" met=
+hod=3D"get">
+<input name=3D"q" type=3D"text">
+<input type=3D"submit" value=3D"Go">
+
+
+</form>
+</div>
+
+<div aria-label=3D"source link" id=3D"sourcelink" role=3D"note">
+<a href=3D"https://docs.wxpython.org/_sources/Overviews.txt" rel=3D"nofollo=
+w">Show page source</a>
+</div>
+</div>
+<div id=3D"sidebarbutton" title=3D"Collapse sidebar" style=3D"color: rgb(0,=
+ 0, 0); font-size: 14px; text-align: center; border-left: 1px solid white; =
+border-right: 1px solid white; padding: 1px 0px; margin: 0px; width: 7px; c=
+ursor: pointer; position: fixed; inset: 30px auto 0px 240px; background-col=
+or: rgba(0, 0, 0, 0);"><div style=3D"position: relative; top: 50%; margin-t=
+op: -8px;">=C2=AB</div></div></div>
+<div class=3D"document" style=3D"margin-left: 249px; margin-right: 0px;">
+<div class=3D"documentwrapper">
+<div class=3D"body headerfix">
+
+<div class=3D"section" id=3D"phoenix-title-overview-documents">
+<span id=3D"overviews"></span><h1><a class=3D"reference internal" href=3D"h=
+ttps://docs.wxpython.org/_images/phoenix_title.png"><img alt=3D"phoenix_tit=
+le" class=3D"align-middle" src=3D"https://docs.wxpython.org/_images/phoenix=
+_title.png" style=3D"width: 32px;"></a> <strong>Overview Documents</strong>=
+<a class=3D"headerlink" href=3D"https://docs.wxpython.org/Overviews.html#ph=
+oenix-title-overview-documents" title=3D"Permalink to this headline">=C2=B6=
+</a></h1>
+<p>In addition to the API reference information for classes and functions i=
+n
+wxPython, this documentation collection includes a number of overviews of
+various aspects of the library, which are listed here.</p>
+<div class=3D"toctree-wrapper compound">
+<ul>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/hello_world.html"> <strong>wxPython Introduction and Hello =
+World</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/hello_world.html#wxpython-introduction">wxPython Introducti=
+on</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/app_overview.html"> <strong>App Overview</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/app_overview.html#introduction">Introduction</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/app_overview.html#application-shutdown">Application Shutdow=
+n</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/bitmap_overview.html"> <strong>Bitmaps and Icons</strong></=
+a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/bitmap_overview.html#supported-bitmap-file-formats">Support=
+ed Bitmap File Formats</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/bookctrl_overview.html"> <strong>BookCtrl Overview</strong>=
+</a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/bookctrl_overview.html#introduction">Introduction</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/bookctrl_overview.html#best-book">Best Book</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/command_overview.html"> <strong>Command Overview</strong></=
+a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/command_overview.html#phoenix-title-commandprocessor-overvi=
+ew"> <strong>CommandProcessor Overview</strong></a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/command_overview.html#phoenix-title-filehistory-overview"> =
+<strong>FileHistory Overview</strong></a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html"> <strong>Common Dialogs</stro=
+ng></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#colourdialog-overview">ColourD=
+ialog Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#fontdialog-overview">FontDialo=
+g Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#printdialog-overview">PrintDia=
+log Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#filedialog-overview">FileDialo=
+g Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#dirdialog-overview">DirDialog =
+Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#textentrydialog-overview">Text=
+EntryDialog Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#passwordentrydialog-overview">=
+PasswordEntryDialog Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#messagedialog-overview">Messag=
+eDialog Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#singlechoicedialog-overview">S=
+ingleChoiceDialog Overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/common_dialogs_overview.html#multichoicedialog-overview">Mu=
+ltiChoiceDialog Overview</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/config_overview.html"> <strong>Config Overview</strong></a>=
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/dataobject_overview.html"> <strong>DataObject Overview</str=
+ong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/dataobject_overview.html#the-data-provider-source-duties">T=
+he data provider (source) duties</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/dataobject_overview.html#the-data-receiver-target-duties">T=
+he data receiver (target) duties</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html"> <strong>Date and Time Overview</st=
+rong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html#introduction">Introduction</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html#all-date-time-classes-at-a-glance">A=
+ll date/time classes at a glance</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html#datetime-characteristics">DateTime c=
+haracteristics</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html#difference-between-datespan-and-time=
+span">Difference between DateSpan and TimeSpan</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html#date-arithmetic">Date arithmetic</a>=
+</li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html#time-zone-considerations">Time zone =
+considerations</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html#daylight-saving-time-dst">Daylight s=
+aving time (DST)</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/datetime_overview.html#datetime-and-holidays">DateTime and =
+Holidays</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/dc_overview.html"> <strong>Device Contexts</strong></a></li=
+>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/dialog_overview.html"> <strong>Dialog Overview</strong></a>=
+<ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/dialog_overview.html#automatic-scrolled-dialogs">Automatic =
+scrolling dialogs</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/dnd_overview.html"> <strong>Drag and Drop Overview</strong>=
+</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/events_overview.html"> <strong>Events and Event Handling</s=
+trong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/events_overview.html#event-handling">Event Handling</a></li=
+>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/events_overview.html#dynamic-event-handling">Dynamic Event =
+Handling</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/events_overview.html#how-events-are-processed">How Events a=
+re Processed</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/events_overview.html#custom-event-summary">Custom Event Sum=
+mary</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/events_overview.html#miscellaneous-notes">Miscellaneous Not=
+es</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/filesystem_overview.html"> <strong>FileSystem Overview</str=
+ong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/filesystem_overview.html#classes">Classes</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/filesystem_overview.html#locations">Locations</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/filesystem_overview.html#combined-protocols">Combined Proto=
+cols</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/filesystem_overview.html#file-systems-included-in-wxhtml">F=
+ile Systems Included in wxHTML</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/filesystem_overview.html#initializing-file-system-handlers"=
+>Initializing file system handlers</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/font_encodings.html"> <strong>Font Encodings</strong></a></=
+li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/font_overview.html"> <strong>Font Overview</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/font_overview.html#introduction">Introduction</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/font_overview.html#native-font-information">Native font inf=
+ormation</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/grid_overview.html"> <strong>Grid Overview</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/grid_overview.html#getting-started">Getting Started</a></li=
+>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/grid_overview.html#column-and-row-sizes">Column and Row Siz=
+es</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/high_dpi_overview.html"> <strong>High DPI Overview</strong>=
+</a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/high_dpi_overview.html#high-dpi-support-in-wxwidgets">High =
+DPI Support in wxWidgets</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/high_dpi_overview.html#introduction">Introduction</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/high_dpi_overview.html#pixel-values-in-wxwidgets">Pixel Val=
+ues in wxWidgets</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/high_dpi_overview.html#high-resolution-images-and-artwork">=
+High-Resolution Images and Artwork</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/high_dpi_overview.html#platform-specific-build-issues">Plat=
+form-Specific Build Issues</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/html_overview.html"> <strong>HTML Overview</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/html_overview.html#html-quick-start">HTML quick start</a></=
+li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/html_overview.html#html-printing">HTML Printing</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/html_overview.html#help-files-format">Help Files Format</a>=
+</li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/html_overview.html#input-filters">Input Filters</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/html_overview.html#cells-and-containers">Cells and Containe=
+rs</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/html_overview.html#tag-handlers">Tag Handlers</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/html_overview.html#tags-supported-by-html">Tags supported b=
+y <code class=3D"xref py py-mod docutils literal notranslate"><span class=
+=3D"pre">html</span></code></a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/internationalization.html"> <strong>Internationalization Ov=
+erview</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/internationalization.html#text-translation">Text translatio=
+n</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/internationalization.html#localization-overview">Localizati=
+on overview</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/internationalization.html#localize-dates">Localize dates</a=
+></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/internationalization.html#localize-numbers">Localize number=
+s</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/internationalization.html#additional-resources">Additional =
+resources</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/writing_non_english_applications.html"> <strong>Writing Non=
+-English Applications</strong></a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/listctrl_overview.html"> <strong>wx.ListCtrl Overview</stro=
+ng></a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/log_classes_overview.html"> <strong>Log Classes Overview</s=
+trong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/log_classes_overview.html#introduction">Introduction</a></l=
+i>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/log_classes_overview.html#log-messages-selection">Log Messa=
+ges Selection</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/log_classes_overview.html#log-targets">Log Targets</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/log_classes_overview.html#logging-in-multi-threaded-applica=
+tions">Logging in Multi-Threaded Applications</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/log_classes_overview.html#logging-customization">Logging Cu=
+stomization</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/log_classes_overview.html#using-trace-masks">Using trace ma=
+sks</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html"> <strong>Printing Framewo=
+rk Overview</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#printout">Printout</a></li=
+>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#printer">Printer</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#printpreview">PrintPreview=
+</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#printerdc">PrinterDC</a></=
+li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#postscriptdc">PostScriptDC=
+</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#printdialog">PrintDialog</=
+a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#printdata">PrintData</a></=
+li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#printdialogdata">PrintDial=
+ogData</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#pagesetupdialog">PageSetup=
+Dialog</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/printing_framework_overview.html#pagesetupdialogdata">PageS=
+etupDialogData</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/refcount_overview.html"> <strong>Reference Counting Overvie=
+w</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/refcount_overview.html#why-you-shouldn-t-care-about-it">Why=
+ You Shouldn=E2=80=99t Care About It</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/refcount_overview.html#object-comparison">Object Comparison=
+</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/refcount_overview.html#object-destruction">Object Destructi=
+on</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/refcount_overview.html#list-of-reference-counted-classes">L=
+ist of Reference Counted Classes</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/richtextctrl_overview.html"> <strong>RichTextCtrl Overview<=
+/strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/richtextctrl_overview.html#introduction">Introduction</a></=
+li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/richtextctrl_overview.html#bugs">Bugs</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/richtextctrl_overview.html#features">Features</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/scrolling_overview.html"> <strong>Scrolled Windows Overview=
+</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/scrolling_overview.html#the-scrollbar-model">The Scrollbar =
+Model</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/scrolling_overview.html#an-example">An Example</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/sizers_overview.html"> <strong>Sizers Overview</strong></a>=
+<ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/sizers_overview.html#the-idea-behind-sizers">The Idea Behin=
+d Sizers</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/sizers_overview.html#common-features">Common Features</a></=
+li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/sizers_overview.html#wx-sizers-the-visual-approach"><em cla=
+ss=3D"xref py py-obj">wx.Sizers</em> - the visual approach</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/sizers_overview.html#hiding-controls-using-sizers">Hiding C=
+ontrols Using Sizers</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/sizers_overview.html#programming-with-boxsizer">Programming=
+ with BoxSizer</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/sizers_overview.html#other-types-of-sizers">Other Types of =
+Sizers</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/sizers_overview.html#createbuttonsizer">CreateButtonSizer</=
+a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/splitterwindow_overview.html"> <strong>Splitter Windows Ove=
+rview</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/splitterwindow_overview.html#example">Example</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/standard_event_identifiers.html"> <strong>Standard event id=
+entifiers</strong></a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/stock_items.html"> <strong>Stock items</strong></a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/tipprovider_overview.html"> <strong>TipProvider Overview</s=
+trong></a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/toolbar_overview.html"> <strong>ToolBar Overview</strong></=
+a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/toolbar_overview.html#introduction">Introduction</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/treectrl_overview.html"> <strong>TreeCtrl Overview</strong>=
+</a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/validator_overview.html"> <strong>Validator Overview</stron=
+g></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/validator_overview.html#validator-basic-concepts">Validator=
+ basic concepts</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/validator_overview.html#anatomy-of-a-validator">Anatomy of =
+a Validator</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/validator_overview.html#how-validators-interact-with-dialog=
+s">How Validators Interact with Dialogs</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_deletion_overview.html"> <strong>Window Deletion Ove=
+rview</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_deletion_overview.html#sequence-of-events-during-win=
+dow-deletion">Sequence of Events During Window Deletion</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_deletion_overview.html#closing-windows">Closing Wind=
+ows</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_deletion_overview.html#default-window-close-behaviou=
+r">Default Window Close Behaviour</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_deletion_overview.html#user-calls-to-exit-from-a-men=
+u">User Calls to Exit From a Menu</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_deletion_overview.html#exiting-the-application-grace=
+fully">Exiting the Application Gracefully</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_deletion_overview.html#automatic-deletion-of-child-w=
+indows">Automatic Deletion of Child Windows</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_deletion_overview.html#other-kinds-of-windows">Other=
+ Kinds of Windows</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_ids_overview.html"> <strong>Window IDs Overview</str=
+ong></a></li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_sizing_overview.html"> <strong>Window Sizing Overvie=
+w</strong></a><ul>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_sizing_overview.html#glossary">Glossary</a></li>
+<li class=3D"toctree-l2"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_sizing_overview.html#functions-related-to-sizing">Fu=
+nctions related to sizing</a></li>
+</ul>
+</li>
+<li class=3D"toctree-l1"><a class=3D"reference internal" href=3D"https://do=
+cs.wxpython.org/window_styles_overview.html"> <strong>Window Styles Overvie=
+w</strong></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=3D"clearer"></div>
+</div>
+<div class=3D"footer" role=3D"contentinfo" style=3D"margin-left: 249px; mar=
+gin-right: 0px;">
+        =C2=A9 Copyright 2012-2022, The wxPython Team.
+      Created using <a href=3D"http://sphinx-doc.org/">Sphinx</a> 2.2.0.
+    </div>
+
+
+
+</body></html>
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-a7299e89-bf8d-49fe-8cd8-0c300102b7c7@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Hover_Frame { border-radius: 0.25em; box-shadow: rgb(136, 51, 170)=
+ 0px 0px 15px; display: inline-block; position: absolute; border: 1px solid=
+ rgb(170, 102, 221) !important; }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow { position: absolute; cursor: poi=
+nter; display: inline-block; border: 2px solid rgb(170, 170, 170); border-r=
+adius: 4px; font-family: "Courier New", Courier; font-size: 9px; color: rgb=
+(240, 240, 240); }
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow span { display: block; background=
+-color: rgb(170, 170, 170); border: 1px solid; border-radius: 3px; line-hei=
+ght: 0; padding: 4px; }
+
+.MathJax_Hover_Arrow:hover { color: white !important; border: 2px solid rgb=
+(204, 204, 204) !important; }
+
+.MathJax_Hover_Arrow:hover span { background-color: rgb(204, 204, 204) !imp=
+ortant; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-365efaeb-9951-42cd-a98b-b220040b50c8@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_About { position: fixed; left: 50%; width: auto; text-align: cente=
+r; border: 3px outset; padding: 1em 2em; background-color: rgb(221, 221, 22=
+1); color: black; cursor: default; font-family: message-box; font-size: 120=
+%; font-style: normal; text-indent: 0px; text-transform: none; line-height:=
+ normal; letter-spacing: normal; word-spacing: normal; overflow-wrap: norma=
+l; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; box=
+-shadow: rgb(128, 128, 128) 0px 10px 20px; }
+
+#MathJax_About.MathJax_MousePost { outline: none; }
+
+.MathJax_Menu { position: absolute; background-color: white; color: black; =
+width: auto; padding: 2px; border: 1px solid rgb(204, 204, 204); margin: 0p=
+x; cursor: default; font-style: ; font-variant: normal; font-weight: ; font=
+-stretch: ; font-size: ; font-family: ; text-align: left; text-indent: 0px;=
+ text-transform: none; line-height: normal; letter-spacing: normal; word-sp=
+acing: normal; overflow-wrap: normal; white-space: nowrap; float: none; z-i=
+ndex: 201; box-shadow: rgb(128, 128, 128) 0px 10px 20px; }
+
+.MathJax_MenuItem { padding: 2px 2em; background: transparent; }
+
+.MathJax_MenuArrow { position: absolute; right: 0.5em; padding-top: 0.25em;=
+ color: rgb(102, 102, 102); font-size: 0.75em; }
+
+.MathJax_MenuActive .MathJax_MenuArrow { color: white; }
+
+.MathJax_MenuArrow.RTL { left: 0.5em; right: auto; }
+
+.MathJax_MenuCheck { position: absolute; left: 0.7em; }
+
+.MathJax_MenuCheck.RTL { right: 0.7em; left: auto; }
+
+.MathJax_MenuRadioCheck { position: absolute; left: 1em; }
+
+.MathJax_MenuRadioCheck.RTL { right: 1em; left: auto; }
+
+.MathJax_MenuLabel { padding: 2px 2em 4px 1.33em; font-style: italic; }
+
+.MathJax_MenuRule { border-top: 1px solid rgb(204, 204, 204); margin: 4px 1=
+px 0px; }
+
+.MathJax_MenuDisabled { color: graytext; }
+
+.MathJax_MenuActive { background-color: highlight; color: highlighttext; }
+
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus { background-color: r=
+gb(232, 232, 232); }
+
+.MathJax_ContextMenu:focus { outline: none; }
+
+.MathJax_ContextMenu .MathJax_MenuItem:focus { outline: none; }
+
+#MathJax_AboutClose { top: 0.2em; right: 0.2em; }
+
+.MathJax_Menu .MathJax_MenuClose { top: -10px; left: -10px; }
+
+.MathJax_MenuClose { position: absolute; cursor: pointer; display: inline-b=
+lock; border: 2px solid rgb(170, 170, 170); border-radius: 18px; font-famil=
+y: "Courier New", Courier; font-size: 24px; color: rgb(240, 240, 240); }
+
+.MathJax_MenuClose span { display: block; background-color: rgb(170, 170, 1=
+70); border: 1.5px solid; border-radius: 18px; line-height: 0; padding: 8px=
+ 0px 6px; }
+
+.MathJax_MenuClose:hover { color: white !important; border: 2px solid rgb(2=
+04, 204, 204) !important; }
+
+.MathJax_MenuClose:hover span { background-color: rgb(204, 204, 204) !impor=
+tant; }
+
+.MathJax_MenuClose:hover:focus { outline: none; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-c6e85903-b3e3-46d3-adb3-f3cdf16ed88b@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview .MJXf-math { color: inherit !important; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-7c8420f2-3523-4c2d-b114-4882320d42a4@mhtml.blink
+
+@charset "utf-8";
+
+.MJX_Assistive_MathML { top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px)=
+; user-select: none; position: absolute !important; padding: 1px 0px 0px !i=
+mportant; border: 0px !important; height: 1px !important; width: 1px !impor=
+tant; overflow: hidden !important; display: block !important; }
+
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block { width: 100% !important; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-77698f7d-0dbd-469e-9d3f-57801ecd26f9@mhtml.blink
+
+@charset "utf-8";
+
+#MathJax_Zoom { position: absolute; background-color: rgb(240, 240, 240); o=
+verflow: auto; display: block; z-index: 301; padding: 0.5em; border: 1px so=
+lid black; margin: 0px; font-weight: normal; font-style: normal; text-align=
+: left; text-indent: 0px; text-transform: none; line-height: normal; letter=
+-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space:=
+ nowrap; float: none; box-sizing: content-box; box-shadow: rgb(170, 170, 17=
+0) 5px 5px 15px; }
+
+#MathJax_ZoomOverlay { position: absolute; left: 0px; top: 0px; z-index: 30=
+0; display: inline-block; width: 100%; height: 100%; border: 0px; padding: =
+0px; margin: 0px; background-color: white; opacity: 0; }
+
+#MathJax_ZoomFrame { position: relative; display: inline-block; height: 0px=
+; width: 0px; }
+
+#MathJax_ZoomEventTrap { position: absolute; left: 0px; top: 0px; z-index: =
+302; display: inline-block; border: 0px; padding: 0px; margin: 0px; backgro=
+und-color: white; opacity: 0; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-aa7ced9b-82b2-4fd4-8dbb-e8d2add3d165@mhtml.blink
+
+@charset "utf-8";
+
+.MathJax_Preview { color: rgb(136, 136, 136); }
+
+#MathJax_Message { position: fixed; left: 1em; bottom: 1.5em; background-co=
+lor: rgb(230, 230, 230); border: 1px solid rgb(149, 149, 149); margin: 0px;=
+ padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto;=
+ white-space: nowrap; }
+
+#MathJax_MSIE_Frame { position: absolute; top: 0px; left: 0px; width: 0px; =
+z-index: 101; border: 0px; margin: 0px; padding: 0px; }
+
+.MathJax_Error { color: rgb(204, 0, 0); font-style: italic; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-ec24d736-948d-4006-a745-16e98bb6c319@mhtml.blink
+
+@charset "utf-8";
+
+.MJXp-script { font-size: 0.8em; }
+
+.MJXp-right { transform-origin: right center; }
+
+.MJXp-bold { font-weight: bold; }
+
+.MJXp-italic { font-style: italic; }
+
+.MJXp-scr { font-family: MathJax_Script, "Times New Roman", Times, STIXGene=
+ral, serif; }
+
+.MJXp-frak { font-family: MathJax_Fraktur, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-sf { font-family: MathJax_SansSerif, "Times New Roman", Times, STIXGe=
+neral, serif; }
+
+.MJXp-cal { font-family: MathJax_Caligraphic, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-mono { font-family: MathJax_Typewriter, "Times New Roman", Times, STI=
+XGeneral, serif; }
+
+.MJXp-largeop { font-size: 150%; }
+
+.MJXp-largeop.MJXp-int { vertical-align: -0.2em; }
+
+.MJXp-math { display: inline-block; line-height: 1.2; text-indent: 0px; fon=
+t-family: "Times New Roman", Times, STIXGeneral, serif; white-space: nowrap=
+; border-collapse: collapse; }
+
+.MJXp-display { display: block; text-align: center; margin: 1em 0px; }
+
+.MJXp-math span { display: inline-block; }
+
+.MJXp-box { text-align: center; display: block !important; }
+
+.MJXp-box::after { content: " "; }
+
+.MJXp-rule { margin-top: 0.1em; display: block !important; }
+
+.MJXp-char { display: block !important; }
+
+.MJXp-mo { margin: 0px 0.15em; }
+
+.MJXp-mfrac { margin: 0px 0.125em; vertical-align: 0.25em; }
+
+.MJXp-denom { width: 100%; display: inline-table !important; }
+
+.MJXp-denom > * { display: table-row !important; }
+
+.MJXp-surd { vertical-align: top; }
+
+.MJXp-surd > * { display: block !important; }
+
+.MJXp-script-box > * { height: 50%; display: table !important; }
+
+.MJXp-script-box > * > * { vertical-align: top; display: table-cell !import=
+ant; }
+
+.MJXp-script-box > :last-child > * { vertical-align: bottom; }
+
+.MJXp-script-box > * > * > * { display: block !important; }
+
+.MJXp-mphantom { visibility: hidden; }
+
+.MJXp-munderover, .MJXp-munder { display: inline-table !important; }
+
+.MJXp-over { text-align: center; display: inline-block !important; }
+
+.MJXp-over > * { display: block !important; }
+
+.MJXp-munderover > *, .MJXp-munder > * { display: table-row !important; }
+
+.MJXp-mtable { vertical-align: 0.25em; margin: 0px 0.125em; }
+
+.MJXp-mtable > * { vertical-align: middle; display: inline-table !important=
+; }
+
+.MJXp-mtr { display: table-row !important; }
+
+.MJXp-mtd { text-align: center; padding: 0.5em 0px 0px 0.5em; display: tabl=
+e-cell !important; }
+
+.MJXp-mtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-mlabeledtr { display: table-row !important; }
+
+.MJXp-mlabeledtr > .MJXp-mtd:first-child { padding-left: 0px; }
+
+.MJXp-mlabeledtr:first-child > .MJXp-mtd { padding-top: 0px; }
+
+.MJXp-merror { background-color: rgb(255, 255, 136); color: rgb(204, 0, 0);=
+ border: 1px solid rgb(204, 0, 0); padding: 1px 3px; font-style: normal; fo=
+nt-size: 90%; }
+
+.MJXp-scale0 { transform: scaleX(0); }
+
+.MJXp-scale1 { transform: scaleX(0.1); }
+
+.MJXp-scale2 { transform: scaleX(0.2); }
+
+.MJXp-scale3 { transform: scaleX(0.3); }
+
+.MJXp-scale4 { transform: scaleX(0.4); }
+
+.MJXp-scale5 { transform: scaleX(0.5); }
+
+.MJXp-scale6 { transform: scaleX(0.6); }
+
+.MJXp-scale7 { transform: scaleX(0.7); }
+
+.MJXp-scale8 { transform: scaleX(0.8); }
+
+.MJXp-scale9 { transform: scaleX(0.9); }
+
+.MathJax_PHTML .noError { font-size: 90%; text-align: left; color: black; p=
+adding: 1px 3px; border: 1px solid; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://docs.wxpython.org/_static/css/phoenix.css
+
+@charset "utf-8";
+
+@import url("default.css");
+
+@import url("tables.css");
+
+img { border: 0px; max-width: 100%; }
+
+div.body p, div.body dd, div.body li { line-height: 120%; text-align: left;=
+ }
+
+ul.simple { margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-=
+bottom: 0px; }
+
+td.field-body > blockquote { margin-top: 0.1em; margin-bottom: 0.5em; }
+
+table.docutils.align-default tbody tr td p { margin: 0px; padding: 2px 0px;=
+ }
+
+div.highlight > pre { padding: 2px 5px; }
+
+dl.last > dd { margin-top: 1px; margin-bottom: 5px; margin-left: 30px; }
+
+div.quotebar { background-color: rgb(248, 248, 248); max-width: 250px; floa=
+t: right; padding: 2px 7px; border: 1px solid rgb(204, 204, 204); }
+
+ul { padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom:=
+ 0px; }
+
+ul li { padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bott=
+om: 0px; }
+
+ul li a.reference { padding-top: 0px; padding-bottom: 0px; margin-top: 0px;=
+ margin-bottom: 0px; }
+
+div.body h3 { background-color: transparent; }
+
+div.body h4 { border: none; background-color: transparent; }
+
+body { background-color: rgb(230, 230, 230); font-size: 0.9em; }
+
+div.headerimage { text-align: center; }
+
+div.headerimage-noshow { display: none; }
+
+div.document { background-color: rgb(230, 230, 230); position: relative; ma=
+rgin-left: 240px; }
+
+div.sphinxsidebarwrapper { padding: 10px 5px 0px 10px; }
+
+div.document-no-sidebar { background-color: rgb(230, 230, 230); position: r=
+elative; margin-left: 0px; z-index: 0; top: 0px; }
+
+div.sphinxsidebar { background-color: rgb(230, 230, 230); margin-left: 0px;=
+ width: 240px; max-width: 240px; height: auto; float: none; overflow: auto;=
+ position: fixed; left: 0px; top: 30px; bottom: 0px; }
+
+div#searchbox { margin-top: 30px; }
+
+div#sourcelink { position: absolute; bottom: 0px; font-style: italic; font-=
+size: small; }
+
+div.related { background-image: url("../images/sphinxdocs/navigation.png");=
+ border-top: 1px solid rgb(221, 221, 221); border-bottom: 1px solid rgb(221=
+, 221, 221); font-size: 90%; line-height: normal; height: auto; left: 0px; =
+right: 0px; top: 0px; }
+
+div.related ul { color: rgb(100, 100, 100); }
+
+div.related ul.row1 { height: 30px; }
+
+div.related ul.row2 { height: 20px; }
+
+div.related ul li { margin: 7px 0px 0px; padding: 0px; float: left; }
+
+div.related ul li.right { font-size: small; float: right; margin-right: 5px=
+; }
+
+div.related ul li#searchbox.right { float: right; margin-right: 5px; margin=
+-top: 7px; font-size: 90%; }
+
+div.related ul li a { margin: 0px; padding: 0px 5px; line-height: normal; c=
+olor: rgb(238, 152, 22); font-size: 90%; }
+
+div.related ul li.reltitle { padding: 0px 5px; }
+
+div.related ul li a:hover { color: rgb(60, 168, 231); }
+
+div.sphinxsidebar h3 { color: rgb(0, 102, 204); }
+
+div.sphinxsidebar h3 a { color: rgb(0, 102, 204); }
+
+div.sphinxsidebar h4 { color: rgb(0, 82, 194); }
+
+div.sphinxsidebar p { color: black; }
+
+div.sphinxsidebar a { color: rgb(53, 95, 124); }
+
+div.section a { color: rgb(202, 121, 0); font-size: 0.95em; letter-spacing:=
+ 0.01em; font-weight: normal; font-style: normal; }
+
+div.section a:hover { color: rgb(36, 145, 207); }
+
+div.sphinxsidebar ul.want-points { list-style: disc; }
+
+div.footer { padding: 80px 0px 9px; text-align: center; font-size: 75%; }
+
+.field-list th { color: rgb(0, 102, 204); }
+
+.floatleft { position: relative; float: left; text-align: center; }
+
+.floatcenter { position: relative; float: none; text-align: center; }
+
+.floatright { position: relative; float: right; text-align: center; }
+
+div.bodywrapper { margin: 0px; }
+
+div.headerfix :target { }
+
+div.return { color: rgb(0, 0, 255); }
+
+div.tip { background-color: rgb(255, 255, 228); border: 1px solid rgb(238, =
+238, 102); }
+
+div.availability { background-color: rgb(232, 247, 196); border: 1px solid =
+rgb(173, 255, 47); }
+
+div.plot-output { }
+
+div.plot-output .figure { text-align: center; margin-bottom: 0px; padding-b=
+ottom: 0px; }
+
+div.plot-output .caption { padding-top: 0px; }
+
+div.plot-output p.admonition-title { display: none; }
+
+div.plot-output::after { content: ""; display: block; height: 0px; clear: b=
+oth; }
+
+.doctodo { background-color: rgb(204, 204, 255); padding: 10px; margin: 0px=
+ -20px; border-bottom: 1px solid rgb(204, 153, 255); }
+
+.docwarning { background-color: rgb(255, 228, 228); padding: 10px; margin: =
+0px -20px; border-bottom: 1px solid rgb(255, 102, 102); }
+
+.doccaution { background-color: rgb(255, 153, 0); padding: 10px; margin: 0p=
+x -20px; border-bottom: 1px solid rgb(255, 102, 102); }
+
+.docimportant { background-color: rgb(255, 204, 51); padding: 10px; margin:=
+ 0px -20px; border-bottom: 1px solid rgb(255, 102, 102); }
+
+.doctip { background-color: rgb(204, 255, 102); padding: 10px; margin: 0px =
+-20px; border-bottom: 1px solid rgb(255, 102, 102); }
+
+.docavailability { background-color: rgb(232, 247, 196); padding: 10px; mar=
+gin: 0px -20px; border-bottom: 1px solid rgb(173, 255, 47); }
+
+div.admonition p { display: inline; }
+
+div.admonition { background-color: rgb(152, 245, 255); border: 1px solid rg=
+b(0, 178, 238); text-align: left; background-image: url("../images/sphinxdo=
+cs/todo.png"); background-repeat: no-repeat; background-position: 5px 5px; =
+padding-left: 33px; }
+
+.admonition tt { background: rgb(152, 245, 255); }
+
+div.seealso { background-color: rgb(255, 255, 204); border: 1px solid rgb(2=
+55, 255, 102); text-align: left; background-image: url("../images/sphinxdoc=
+s/seealso.png"); background-repeat: no-repeat; background-position: 5px 5px=
+; padding-left: 33px; }
+
+.seealso tt { background: rgb(255, 255, 204); }
+
+div.warning { background-color: rgb(255, 228, 228); border: 1px solid rgb(2=
+55, 102, 102); text-align: left; background-image: url("../images/sphinxdoc=
+s/warning.png"); background-repeat: no-repeat; background-position: 5px 5px=
+; padding-left: 33px; }
+
+.warning tt { background: rgb(255, 228, 228); }
+
+div.todo { background-color: rgb(204, 204, 255); border: 1px solid rgb(204,=
+ 153, 255); text-align: left; background-image: url("../images/sphinxdocs/t=
+odo.png"); background-repeat: no-repeat; background-position: 5px 5px; padd=
+ing-left: 33px; }
+
+.todo tt { background: rgb(204, 204, 255); }
+
+div.caution { background-color: rgb(204, 255, 255); border: 1px solid rgb(1=
+53, 204, 255); text-align: left; }
+
+.caution tt { background: rgb(204, 204, 255); }
+
+div.important { background-color: rgb(255, 204, 51); border: 1px solid rgb(=
+255, 153, 0); text-align: left; }
+
+.important tt { background: rgb(255, 204, 51); }
+
+div.tip { background-color: rgb(204, 255, 51); border: 1px solid rgb(51, 20=
+4, 51); text-align: left; }
+
+.tip tt { background: rgb(204, 255, 51); }
+
+div.note { background-color: rgb(238, 238, 238); border: 1px solid rgb(204,=
+ 204, 204); text-align: left; background-image: url("../images/sphinxdocs/i=
+nfo.png"); background-repeat: no-repeat; background-position: 5px 5px; padd=
+ing-left: 33px; }
+
+.note tt { background: rgb(238, 238, 238); }
+
+div.availability { background-color: rgb(232, 247, 196); border: 1px solid =
+rgb(173, 255, 47); text-align: left; background-image: url("../images/sphin=
+xdocs/available.png"); background-repeat: no-repeat; background-position: 5=
+px 5px; padding-left: 33px; }
+
+.availability tt { background: rgb(232, 247, 196); }
+
+div.wxdeprecated { background-color: rgb(255, 230, 195); border: 1px solid =
+rgb(237, 195, 136); text-align: left; background-image: url("../images/sphi=
+nxdocs/warning.png"); background-repeat: no-repeat; background-position: 5p=
+x 5px; padding-left: 33px; }
+
+p.admonition-title { margin: 10px 10px 5px 0px; font-weight: bold; }
+
+.gallery_class table { float: left; margin: 0px 5px 20px 0px; }
+
+.gallery_class table { border-collapse: collapse; }
+
+.gallery_class table td { padding: 0px; }
+
+.gallery_class table caption { font-size: 80%; }
+
+.gallery .caption { height: 4em; vertical-align: top; }
+
+.gallery table { width: 200px; }
+
+table.field-list th { padding-left: 5px; border-left: 1px solid rgb(170, 17=
+0, 170) !important; }
+
+table.field-list { border-collapse: separate; border-spacing: 10px; }
+
+table.footnote td, table.footnote th { border: none; }
+
+pre { font-family: Consolas, "Deja Vu Sans Mono", "Bitstream Vera Sans Mono=
+", "Trebuchet MS", monospace; font-size: 0.9em; letter-spacing: 0.015em; pa=
+dding: 0.5em; border: 1px solid rgb(204, 204, 204); background-color: rgb(2=
+48, 248, 248); }
+
+cite, code, tt { font-family: Consolas, "Deja Vu Sans Mono", "Bitstream Ver=
+a Sans Mono", "Trebuchet MS", monospace; font-size: 0.95em; letter-spacing:=
+ 0.01em; }
+
+code.descname, code.descclassname { font-weight: bold; }
+
+a.headerlink { color: rgb(198, 15, 15); font-size: 0.8em; padding: 0px 4px;=
+ text-decoration: none; visibility: hidden; }
+
+h1:hover > a.headerlink, h2:hover > a.headerlink, h3:hover > a.headerlink, =
+h4:hover > a.headerlink, h5:hover > a.headerlink, h6:hover > a.headerlink, =
+dt:hover > a.headerlink { visibility: visible; }
+
+a em { color: rgb(202, 121, 0); background-color: transparent; font: italic=
+ 0.95em Consolas, "Deja Vu Sans Mono", "Bitstream Vera Sans Mono", "Trebuch=
+et MS", monospace; border: 0px; letter-spacing: 0.01em; }
+
+a em:hover { color: rgb(36, 145, 207); }
+
+a:hover { color: rgb(36, 145, 207); }
+
+a.headerlink:hover { background-color: rgb(198, 15, 15); color: white; }
+
+a tt { background-color: transparent; font-weight: bold; border: 0px; color=
+: rgb(202, 121, 0); }
+
+a tt:hover { color: rgb(36, 145, 207); }
+
+.panel { position: fixed; top: 60px; right: 0px; display: none; background:=
+ rgb(0, 0, 0); border: 1px solid rgb(17, 17, 17); font-family: Calibri, "De=
+ja Vu Sans", "Bitstream Vera Sans", "Trebuchet MS", monospace; border-top-l=
+eft-radius: 20px; border-bottom-left-radius: 20px; width: 200px; height: au=
+to; padding: 20px 30px 30px; opacity: 0.85; }
+
+.panel p { margin: 0px 0px 15px; padding: 0px; color: rgb(204, 204, 204); }
+
+.panel a, .panel a:visited { margin: 0px; padding: 0px; color: rgb(202, 121=
+, 0); text-decoration: none; border-bottom: 1px solid rgb(202, 121, 0); }
+
+.panel a:hover, .panel a:visited:hover { margin: 0px; padding: 0px; color: =
+rgb(36, 145, 207); text-decoration: none; border-bottom: 1px solid rgb(36, =
+145, 207); }
+
+a.trigger { position: fixed; text-decoration: none; top: 80px; right: 0px; =
+font-size: 20px; letter-spacing: -1px; font-family: Consolas, "Deja Vu Sans=
+ Mono", "Bitstream Vera Sans Mono", "Trebuchet MS", monospace; color: rgb(2=
+55, 255, 255); padding: 20px 40px 20px 15px; font-weight: 700; background: =
+url("../images/sphinxdocs/plus2.png") 85% 55% no-repeat rgb(51, 51, 51); bo=
+rder: 1px solid rgb(68, 68, 68); border-top-left-radius: 20px; border-botto=
+m-left-radius: 20px; border-bottom-right-radius: 0px; display: block; }
+
+a.trigger:hover { position: fixed; text-decoration: none; top: 80px; right:=
+ 0px; font-size: 20px; letter-spacing: -1px; font-family: Consolas, "Deja V=
+u Sans Mono", "Bitstream Vera Sans Mono", "Trebuchet MS", monospace; color:=
+ rgb(255, 255, 255); padding: 20px 40px 20px 20px; font-weight: 700; backgr=
+ound: url("../images/sphinxdocs/plus2.png") 85% 55% no-repeat rgb(34, 34, 3=
+4); border: 1px solid rgb(68, 68, 68); border-top-right-radius: 20px; borde=
+r-bottom-right-radius: 20px; border-bottom-left-radius: 0px; display: block=
+; }
+
+a.active.trigger { background: url("../images/sphinxdocs/minus2.png") 85% 5=
+5% no-repeat rgb(34, 34, 34); }
+
+.columns { clear: both; width: 330px; padding: 0px 0px 20px; line-height: 2=
+2px; }
+
+.colleft { float: left; width: 130px; line-height: 22px; }
+
+.colright { float: right; width: 130px; line-height: 22px; }
+
+pre { padding: 5px; background-color: rgb(255, 255, 229); color: rgb(51, 51=
+, 51); line-height: 120%; border-top: 1px solid rgb(232, 216, 152); border-=
+bottom: 1px solid rgb(232, 216, 152); border-image: initial; border-left: n=
+one; border-right: none; }
+
+tt { background-color: rgb(234, 234, 248); padding: 0px 1px; font-size: 0.9=
+5em; }
+
+.codeexpander p { padding-left: 25px; cursor: pointer; background: url("../=
+images/sphinxdocs/arrows.png") 0px -33px no-repeat; text-decoration: none; =
+}
+
+.codeexpander p { border-bottom: 1px solid rgb(204, 204, 204); padding-bott=
+om: 4px; }
+
+.codeexpander p a { text-decoration: none; }
+
+.codeexpander p.myactive { background-position: 0px 5px; }
+
+.myactive { background-color: rgb(230, 230, 230); background-position: 0px =
+5px; }
+
+p.mybiglink a.mybiglink { font-size: 1.2em; color: rgb(53, 95, 124); text-d=
+ecoration: none; }
+
+table.contentstable p.mybiglink { line-height: 150%; }
+
+hr.overloadsep { color: rgb(0, 0, 255); background-color: rgb(0, 0, 255); h=
+eight: 1px; border: none; width: 50%; float: left; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://docs.wxpython.org/_static/css/default.css
+
+@charset "utf-8";
+
+@import url("basic.css");
+
+body { font-family: sans-serif; font-size: 100%; background-color: rgb(17, =
+48, 61); color: rgb(0, 0, 0); margin: 0px; padding: 0px; }
+
+div.document { background-color: rgb(28, 78, 99); }
+
+div.documentwrapper { float: left; width: 100%; }
+
+div.bodywrapper { margin: 0px 0px 0px 230px; }
+
+div.body { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); paddi=
+ng: 0px 20px 30px; }
+
+div.footer { padding: 40px 0px 9px; text-align: center; font-size: 75%; }
+
+div.related { background-color: rgb(19, 63, 82); line-height: 30px; color: =
+rgb(255, 255, 255); }
+
+div.related a { color: rgb(255, 255, 255); }
+
+div.sphinxsidebarwrapper { padding: 10px 5px 0px 10px; }
+
+div.sphinxsidebar { float: left; width: 230px; margin-left: -100%; font-siz=
+e: 90%; }
+
+div.sphinxsidebar h3 { font-family: "Trebuchet MS", sans-serif; color: rgb(=
+255, 255, 255); font-size: 1.4em; font-weight: normal; margin: 0px; padding=
+: 0px; }
+
+div.sphinxsidebar h3 a { color: rgb(255, 255, 255); }
+
+div.sphinxsidebar h4 { font-family: "Trebuchet MS", sans-serif; color: rgb(=
+255, 255, 255); font-size: 1.3em; font-weight: normal; margin: 5px 0px 0px;=
+ padding: 0px; }
+
+div.sphinxsidebar p { color: rgb(255, 255, 255); }
+
+div.sphinxsidebar p.topless { margin: 5px 10px 10px; }
+
+div.sphinxsidebar ul { margin: 10px; padding: 0px; color: rgb(255, 255, 255=
+); }
+
+div.sphinxsidebar a { color: rgb(152, 219, 204); }
+
+div.sphinxsidebar input { border: 1px solid rgb(152, 219, 204); font-family=
+: sans-serif; font-size: 1em; }
+
+a { color: rgb(53, 95, 124); text-decoration: none; }
+
+a:visited { color: rgb(53, 95, 124); text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body h=
+6 { font-family: "Trebuchet MS", sans-serif; background-color: rgb(242, 242=
+, 242); font-weight: normal; color: rgb(32, 67, 92); border-bottom: 1px sol=
+id rgb(204, 204, 204); margin: 20px -20px 10px; padding: 3px 0px 3px 10px; =
+}
+
+div.body h1 { margin-top: 0px; font-size: 200%; }
+
+div.body h2 { font-size: 160%; }
+
+div.body h3 { font-size: 140%; }
+
+div.body h4 { font-size: 120%; }
+
+div.body h5 { font-size: 110%; }
+
+div.body h6 { font-size: 100%; }
+
+a.headerlink { color: rgb(198, 15, 15); font-size: 0.8em; padding: 0px 4px;=
+ text-decoration: none; }
+
+a.headerlink:hover { background-color: rgb(198, 15, 15); color: white; }
+
+div.body p, div.body dd, div.body li { text-align: justify; line-height: 13=
+0%; }
+
+div.admonition p.admonition-title + p { display: inline; }
+
+div.note { background-color: rgb(238, 238, 238); border: 1px solid rgb(204,=
+ 204, 204); }
+
+div.seealso { background-color: rgb(255, 255, 204); border: 1px solid rgb(2=
+55, 255, 102); }
+
+div.topic { background-color: rgb(238, 238, 238); }
+
+div.warning { background-color: rgb(255, 228, 228); border: 1px solid rgb(2=
+55, 102, 102); }
+
+p.admonition-title { display: inline; }
+
+p.admonition-title::after { content: ":"; }
+
+pre { padding: 5px; background-color: rgb(238, 255, 204); color: rgb(51, 51=
+, 51); line-height: 120%; border-top: 1px solid rgb(170, 204, 153); border-=
+bottom: 1px solid rgb(170, 204, 153); border-image: initial; border-left: n=
+one; border-right: none; }
+
+tt { background-color: rgb(236, 240, 243); padding: 0px 1px; font-size: 0.9=
+5em; }
+
+th { background-color: rgb(238, 221, 238); }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://docs.wxpython.org/_static/css/basic.css
+
+@charset "utf-8";
+
+div.clearer { clear: both; }
+
+div.related { width: 100%; font-size: 90%; }
+
+div.related h3 { display: none; }
+
+div.related ul { margin: 0px; padding: 0px 0px 0px 10px; list-style: none; =
+}
+
+div.related li { display: inline; }
+
+div.related li.right { float: right; margin-right: 5px; }
+
+div.sphinxsidebarwrapper { padding: 10px 5px 0px 10px; }
+
+div.sphinxsidebar { float: left; width: 230px; margin-left: -100%; font-siz=
+e: 90%; }
+
+div.sphinxsidebar ul { list-style: none; }
+
+div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points { margin-left: 20=
+px; list-style: square; }
+
+div.sphinxsidebar ul ul { margin-top: 0px; margin-bottom: 0px; }
+
+div.sphinxsidebar form { margin-top: 10px; }
+
+div.sphinxsidebar input { border: 1px solid rgb(152, 219, 204); font-family=
+: sans-serif; font-size: 1em; }
+
+img { border: 0px; max-width: 100%; }
+
+ul.search { margin: 10px 0px 0px 20px; padding: 0px; }
+
+ul.search li { padding: 5px 0px 5px 20px; background-image: url("file.png")=
+; background-repeat: no-repeat; background-position: 0px 7px; }
+
+ul.search li a { font-weight: bold; }
+
+ul.search li div.context { color: rgb(136, 136, 136); margin: 2px 0px 0px 3=
+0px; text-align: left; }
+
+ul.keywordmatches li.goodmatch a { font-weight: bold; }
+
+table.contentstable { width: 90%; }
+
+table.contentstable p.biglink { line-height: 150%; }
+
+a.biglink { font-size: 1.2em; }
+
+span.linkdescr { font-style: italic; padding-top: 5px; font-size: 90%; }
+
+table.indextable { width: 100%; }
+
+table.indextable td { text-align: left; vertical-align: top; }
+
+table.indextable dl, table.indextable dd { margin-top: 0px; margin-bottom: =
+0px; }
+
+table.indextable tr.pcap { height: 10px; }
+
+table.indextable tr.cap { margin-top: 10px; background-color: rgb(242, 242,=
+ 242); }
+
+img.toggler { margin-right: 3px; margin-top: 3px; cursor: pointer; }
+
+div.modindex-jumpbox { border-top: 1px solid rgb(221, 221, 221); border-bot=
+tom: 1px solid rgb(221, 221, 221); margin: 1em 0px; padding: 0.4em; }
+
+div.genindex-jumpbox { border-top: 1px solid rgb(221, 221, 221); border-bot=
+tom: 1px solid rgb(221, 221, 221); margin: 1em 0px; padding: 0.4em; }
+
+a.headerlink { visibility: hidden; }
+
+h1:hover > a.headerlink, h2:hover > a.headerlink, h3:hover > a.headerlink, =
+h4:hover > a.headerlink, h5:hover > a.headerlink, h6:hover > a.headerlink, =
+dt:hover > a.headerlink { visibility: visible; }
+
+div.body p.caption { text-align: inherit; }
+
+div.body td { text-align: left; }
+
+.field-list ul { padding-left: 1em; }
+
+.first { margin-top: 0px !important; }
+
+p.rubric { margin-top: 30px; font-weight: bold; }
+
+.align-left { text-align: left; }
+
+.align-center { clear: both; text-align: center; }
+
+.align-right { text-align: right; }
+
+div.sidebar { margin: 0px 0px 0.5em 1em; border: 1px solid rgb(221, 221, 18=
+7); padding: 7px 7px 0px; background-color: rgb(255, 255, 238); width: 40%;=
+ float: right; }
+
+p.sidebar-title { font-weight: bold; }
+
+div.topic { border: 1px solid rgb(204, 204, 204); padding: 7px 7px 0px; mar=
+gin: 10px 0px; }
+
+p.topic-title { font-size: 1.1em; font-weight: bold; margin-top: 10px; }
+
+div.admonition { margin-top: 10px; margin-bottom: 10px; padding: 7px; }
+
+div.admonition dt { font-weight: bold; }
+
+div.admonition dl { margin-bottom: 0px; }
+
+p.admonition-title { margin: 0px 10px 5px 0px; font-weight: bold; }
+
+div.body p.centered { text-align: center; margin-top: 25px; }
+
+table.docutils { border: 0px; border-collapse: collapse; }
+
+table.docutils td, table.docutils th { padding: 1px 8px 1px 5px; border-wid=
+th: 0px 0px 1px; border-top-style: initial; border-top-color: initial; bord=
+er-left-style: initial; border-left-color: initial; border-right-style: ini=
+tial; border-right-color: initial; border-bottom-style: solid; border-botto=
+m-color: rgb(170, 170, 170); }
+
+table.field-list td, table.field-list th { border: 0px !important; }
+
+table.footnote td, table.footnote th { border: 0px !important; }
+
+th { text-align: left; padding-right: 5px; }
+
+table.citation { border-left: 1px solid gray; margin-left: 1px; }
+
+table.citation td { border-bottom: none; }
+
+ol.arabic { list-style: decimal; }
+
+ol.loweralpha { list-style: lower-alpha; }
+
+ol.upperalpha { list-style: upper-alpha; }
+
+ol.lowerroman { list-style: lower-roman; }
+
+ol.upperroman { list-style: upper-roman; }
+
+dl { margin-bottom: 15px; }
+
+dd p { margin-top: 0px; }
+
+dd ul, dd table { margin-bottom: 10px; }
+
+dd { margin-top: 3px; margin-bottom: 10px; margin-left: 30px; }
+
+dt:target, .highlighted { background-color: rgb(251, 229, 78); }
+
+dl.glossary dt { font-weight: bold; font-size: 1.1em; }
+
+.field-list ul { margin: 0px; padding-left: 1em; }
+
+.field-list p { margin: 0px; }
+
+.refcount { color: rgb(0, 102, 0); }
+
+.optional { font-size: 1.3em; }
+
+.versionmodified { font-style: italic; }
+
+.system-message { background-color: rgb(255, 221, 170); padding: 5px; borde=
+r: 3px solid red; }
+
+.footnote:target { background-color: rgb(255, 255, 170); }
+
+.line-block { display: block; margin-top: 1em; margin-bottom: 1em; }
+
+.line-block .line-block { margin-top: 0px; margin-bottom: 0px; margin-left:=
+ 1.5em; }
+
+.guilabel, .menuselection { font-family: sans-serif; }
+
+.accelerator { text-decoration: underline; }
+
+.classifier { font-style: oblique; }
+
+pre { overflow: auto; }
+
+td.linenos pre { padding: 5px 0px; border: 0px; background-color: transpare=
+nt; color: rgb(170, 170, 170); }
+
+table.highlighttable { margin-left: 0.5em; }
+
+table.highlighttable td { padding: 0px 0.5em; }
+
+tt.descname { background-color: transparent; font-weight: bold; font-size: =
+1.2em; }
+
+tt.descclassname { background-color: transparent; }
+
+tt.xref, a tt { background-color: transparent; font-weight: bold; }
+
+h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt { background-color: transparent; }
+
+.viewcode-link { float: right; }
+
+.viewcode-back { float: right; font-family: sans-serif; }
+
+div.viewcode-block:target { margin: -1px -10px; padding: 0px 10px; }
+
+img.math { vertical-align: middle; }
+
+div.body div.math p { text-align: center; }
+
+span.eqno { float: right; }
+
+@media print {
+  div.document, div.documentwrapper, div.bodywrapper { width: 100%; margin:=
+ 0px !important; }
+  div.sphinxsidebar, div.related, div.footer, #top-link { display: none; }
+}
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://docs.wxpython.org/_static/css/tables.css
+
+@charset "utf-8";
+
+.pretty-table { font-family: verdana, arial, sans-serif; color: rgb(51, 51,=
+ 51); border-width: 1px; border-color: rgb(153, 153, 153); border-collapse:=
+ collapse; }
+
+.pretty-table th { background: url("../images/sphinxdocs/cell-blue.jpg") rg=
+b(181, 207, 210); border-width: 1px; padding: 8px; vertical-align: middle; =
+border-style: solid; border-color: rgb(153, 153, 153); }
+
+.pretty-table td { background: url("../images/sphinxdocs/cell-grey.jpg") rg=
+b(220, 221, 192); border-width: 1px; padding: 3px; vertical-align: middle; =
+border-style: solid; border-color: rgb(153, 153, 153); }
+
+.pretty-table caption { caption-side: bottom; font-size: 0.9em; font-style:=
+ italic; text-align: right; padding: 0.5em 0px; }
+
+.pretty-table tr:hover th, .pretty-table tr:hover td { color: rgb(0, 0, 255=
+); background: url("../images/sphinxdocs/orange_gradient.png") rgb(181, 207=
+, 210); }
+
+.pretty-table tr:hover th[class=3D"head"] { background: url("../images/sphi=
+nxdocs/cell-blue.jpg") rgb(181, 207, 210); color: rgb(0, 102, 204); }
+
+.pretty-table tr:hover tt, .pretty-table tr:hover tt { background: url("../=
+images/sphinxdocs/orange_gradient.png") rgb(181, 207, 210); }
+
+.pretty-table td tt { background: url("../images/sphinxdocs/cell-grey.jpg")=
+ rgb(224, 224, 224); }
+
+.centertable { margin-bottom: 2em; }
+
+.centertable th.head { font-weight: bold; text-align: left; border-bottom: =
+1px solid black; padding-right: 0.5em; }
+
+.centertable th.field-name { font-weight: bold; text-align: left; padding-r=
+ight: 1em; }
+
+.centertable th { background-color: rgb(238, 221, 238); }
+
+.centertable td { vertical-align: middle; }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://docs.wxpython.org/_static/images/sphinxdocs/navigation.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAEAAAA8CAIAAAAok0etAAAAP0lEQVR42rVKBQEAMAgb9E9LgA+n
+wdGZmpkC0CwR6Q8oAstqsZkR9Cc4HwrGDj8tl8w9TnL0xo/v9NLAy3xcB2iqIU9LP1VsAAAAAElF
+TkSuQmCC
+
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://docs.wxpython.org/_static/pygments.css
+
+@charset "utf-8";
+
+.highlight .hll { background-color: rgb(255, 255, 204); }
+
+.highlight { background: rgb(238, 255, 204); }
+
+.highlight .c { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .err { border: 1px solid rgb(255, 0, 0); }
+
+.highlight .k { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .o { color: rgb(102, 102, 102); }
+
+.highlight .ch { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .cm { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .cp { color: rgb(0, 112, 32); }
+
+.highlight .cpf { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .c1 { color: rgb(64, 128, 144); font-style: italic; }
+
+.highlight .cs { color: rgb(64, 128, 144); background-color: rgb(255, 240, =
+240); }
+
+.highlight .gd { color: rgb(160, 0, 0); }
+
+.highlight .ge { font-style: italic; }
+
+.highlight .gr { color: rgb(255, 0, 0); }
+
+.highlight .gh { color: rgb(0, 0, 128); font-weight: bold; }
+
+.highlight .gi { color: rgb(0, 160, 0); }
+
+.highlight .go { color: rgb(51, 51, 51); }
+
+.highlight .gp { color: rgb(198, 93, 9); font-weight: bold; }
+
+.highlight .gs { font-weight: bold; }
+
+.highlight .gu { color: rgb(128, 0, 128); font-weight: bold; }
+
+.highlight .gt { color: rgb(0, 68, 221); }
+
+.highlight .kc { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kd { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kn { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kp { color: rgb(0, 112, 32); }
+
+.highlight .kr { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kt { color: rgb(144, 32, 0); }
+
+.highlight .m { color: rgb(32, 128, 80); }
+
+.highlight .s { color: rgb(64, 112, 160); }
+
+.highlight .na { color: rgb(64, 112, 160); }
+
+.highlight .nb { color: rgb(0, 112, 32); }
+
+.highlight .nc { color: rgb(14, 132, 181); font-weight: bold; }
+
+.highlight .no { color: rgb(96, 173, 213); }
+
+.highlight .nd { color: rgb(85, 85, 85); font-weight: bold; }
+
+.highlight .ni { color: rgb(213, 85, 55); font-weight: bold; }
+
+.highlight .ne { color: rgb(0, 112, 32); }
+
+.highlight .nf { color: rgb(6, 40, 126); }
+
+.highlight .nl { color: rgb(0, 32, 112); font-weight: bold; }
+
+.highlight .nn { color: rgb(14, 132, 181); font-weight: bold; }
+
+.highlight .nt { color: rgb(6, 40, 115); font-weight: bold; }
+
+.highlight .nv { color: rgb(187, 96, 213); }
+
+.highlight .ow { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .w { color: rgb(187, 187, 187); }
+
+.highlight .mb { color: rgb(32, 128, 80); }
+
+.highlight .mf { color: rgb(32, 128, 80); }
+
+.highlight .mh { color: rgb(32, 128, 80); }
+
+.highlight .mi { color: rgb(32, 128, 80); }
+
+.highlight .mo { color: rgb(32, 128, 80); }
+
+.highlight .sa { color: rgb(64, 112, 160); }
+
+.highlight .sb { color: rgb(64, 112, 160); }
+
+.highlight .sc { color: rgb(64, 112, 160); }
+
+.highlight .dl { color: rgb(64, 112, 160); }
+
+.highlight .sd { color: rgb(64, 112, 160); font-style: italic; }
+
+.highlight .s2 { color: rgb(64, 112, 160); }
+
+.highlight .se { color: rgb(64, 112, 160); font-weight: bold; }
+
+.highlight .sh { color: rgb(64, 112, 160); }
+
+.highlight .si { color: rgb(112, 160, 208); font-style: italic; }
+
+.highlight .sx { color: rgb(198, 93, 9); }
+
+.highlight .sr { color: rgb(35, 83, 136); }
+
+.highlight .s1 { color: rgb(64, 112, 160); }
+
+.highlight .ss { color: rgb(81, 121, 24); }
+
+.highlight .bp { color: rgb(0, 112, 32); }
+
+.highlight .fm { color: rgb(6, 40, 126); }
+
+.highlight .vc { color: rgb(187, 96, 213); }
+
+.highlight .vg { color: rgb(187, 96, 213); }
+
+.highlight .vi { color: rgb(187, 96, 213); }
+
+.highlight .vm { color: rgb(187, 96, 213); }
+
+.highlight .il { color: rgb(32, 128, 80); }
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://docs.wxpython.org/_static/images/sphinxdocs/phoenix_small.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABCUlEQVR42nWRwU1EMQxEp5StgE8H
+3xVQAqYCWkgKWIkjJ9rgwsEN0AIlwJFrGGekRFHYaBR5/ed5Yi0MqF0H71rdvd4+ZpbWBgSgVmuN
+XRYR0bbDfgJ2B1xhz6ZW9CN4B+BINz66HlOaTT6LHTiOQ8DUNTHx4/WAlrVscdhkVriUotnd3W8C
+vxHvpZznyc+ENV7SYuwDPoHvPmZsKYeitBJv/nR3M8OrOxM2wOJnCSHDgh7INwCN51B67FNbZQgf
+rJAFUDpFN1W/5ur8yj6xCZDWuwWMBMrM/gEuDxc9gJ+ZpB0kxbJYALUE2Nvm3pdWAva//AUIyMZb
+78vDgoFjHmt34B54SsnG+w/Dm1q1beev6wAAAABJRU5ErkJggg==
+
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://docs.wxpython.org/_static/phoenix_main.png
+
+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
+
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://docs.wxpython.org/_images/phoenix_title.png
+
+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
+
+------MultipartBoundary--7CgA6rKevnXTUJHbFnmQVCFvHi6YY6SczxYG6YwAvH------
